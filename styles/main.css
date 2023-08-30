@@ -136,8 +136,22 @@ hr {
 }
 
 .projheading {
+    display: flex;
     padding-top: 20px;
     color: black;
+}
+
+#gitlogo {
+    display: inline;
+    margin-top: 0px;
+}
+
+.gitsvg {
+    transition: filter 0.3s ease;
+}
+
+.gitsvg:hover {
+    filter: invert(50%) sepia(100%) saturate(1000%) hue-rotate(300deg); /* Adjust the filter as needed */
 }
 
 #contact {
