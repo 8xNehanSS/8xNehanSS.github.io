@@ -22,3 +22,33 @@ const content = document.querySelector('credits');
 function scrolldownslow() {
   content.scrollIntoView({ behavior: 'smooth' });
 }
+
+const name = "8xNehanSS..";
+
+function typeText(element, text, speed) {
+  let index = 0;
+
+  function addCharacter() {
+      if (index < text.length) {
+          element.innerHTML += text.charAt(index);
+          index++;
+          setTimeout(addCharacter, speed);
+      }
+  }
+
+  addCharacter();
+}
+
+const targetElement = document.getElementById("name"); // Replace with the ID of your target element
+const textToType = "8xNehanSS.."; // Replace with your desired text
+const typingSpeed = 200;
+
+window.addEventListener('load', function () {
+
+  typeText(targetElement, textToType, typingSpeed);
+
+  setTimeout(function () {
+      document.querySelector('.splash').style.display = 'none';
+      document.querySelector('#heading').style.display = 'flex';
+  }, 3000);
+});
