@@ -60,7 +60,7 @@ html, body {
 
 #heading h1 {
     display: flex;
-    padding-left: 2%;
+    padding-left: 5%;
     font-size: 30px;
     font-family: Crimson Pro,serif;
     color: #000000;
@@ -68,7 +68,7 @@ html, body {
 
 
 #connect {
-    padding-right: 2%;
+    padding-right: 5%;
     text-align: left;
     font-family: Crimson Pro,serif;
 }
