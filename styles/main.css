@@ -13,6 +13,10 @@ html, body {
     scroll-behavior: smooth;
 }
 
+.yellow {
+    color: #f1883d;
+}
+
 .splash {
     position: fixed;
     top: 0;
@@ -206,7 +210,9 @@ hr {
 #contact {
     font-family: Crimson Pro,serif;
     font-size: 150%;
-    padding: 1% 20% 0% 20%;
+    padding: 2% 0% 0% 0%;
+    width: 75%;
+    margin: auto;
     text-align: center;
     color: #a52514;
 }
@@ -243,4 +249,8 @@ hr {
 #links img:hover {
     background-color:rgb(23, 179, 93);
     border-radius: 10px;
+}
+
+.email {
+    font-size: 20px;
 }

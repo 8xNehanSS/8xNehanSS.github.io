@@ -39,8 +39,8 @@ function typeText(element, text, speed) {
   addCharacter();
 }
 
-const targetElement = document.getElementById("name"); // Replace with the ID of your target element
-const textToType = "8xNehanSS.."; // Replace with your desired text
+const targetElement = document.getElementById("name");
+const textToType = "8xNehanSS..";
 const typingSpeed = 200;
 
 window.addEventListener('load', function () {
@@ -85,4 +85,8 @@ function windowSize() {
   }
 }
 
-window.addEventListener('resize', windowSize);
+window.addEventListener("load", function() {
+  const container = document.querySelector(".box-container");
+  const middleScrollLeft = (container.scrollWidth - container.clientWidth) / 2;
+  container.scrollLeft = middleScrollLeft;
+});
