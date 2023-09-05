@@ -49,8 +49,8 @@ html, body {
     display: none;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid black;
-
+    box-shadow: 0px 5.9825618267059326px 7.456404209136963px 0px #00000053;
+    
 }
 
 #name {
@@ -95,30 +95,38 @@ html, body {
 
 #line1 {
     padding-top: 2%;
-    padding-left: 5%;
-    text-align: center;
-    font-size: 150%;
-    font-family: monospace;
-}
-
-#line2 {
-    padding-top: 3%;
-    padding-left: 14%;
     padding-right: 5%;
     text-align: center;
     font-size: 150%;
     font-family: monospace;
+    width: 40%;
+    margin: auto;
+}
+
+#line2 {
+    padding-top: 3%;
+    padding-left: 0%;
+    padding-right: 0%;
+    text-align: center;
+    font-size: 150%;
+    font-family: monospace;
+    margin: auto;
 }
 
 #line2 img {
     border: 5px solid rgb(23, 179, 93);
     margin-bottom: 10px;
+    border-radius: 9px;
+    box-shadow: 3px 5px 5px 0px #00000053;
+
 }
 
 hr {
     border-top: 2px solid black;
+    margin: auto;
     margin-top: 40px;
     margin-bottom: 20px;
+    width: 90%;
 }
 
 #domainheading {
@@ -209,7 +217,7 @@ hr {
     text-align: center;
     padding-bottom: 1%;
     background-color: rgb(23, 179, 93);
-    border-top: 2px solid black;
+    box-shadow: 0px 5.9825618267059326px 7.456404209136963px 10px #00000053;
 }
 
 #credits p {

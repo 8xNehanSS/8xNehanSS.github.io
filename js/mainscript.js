@@ -68,6 +68,21 @@ function windowSize() {
     targetElement1.style.display = "block"
     targetElement2.style.padding = "0px 5px 0px";
     targetElement3.style.padding = "30px 5px 0px";
+    targetElement2.style.width = "80%";
+    targetElement4.style.padding = "100px 0px 0px";
+  } else {
+    const targetElement = document.getElementById("nameheading");
+    const targetElement1 = document.getElementById("content1");
+    const targetElement2 = document.getElementById("line1");
+    const targetElement3 = document.getElementById("line2");
+    const targetElement4 = document.getElementById("whitespace");
+
+    targetElement.innerHTML = "Nehan Sudasinghe"
+    targetElement1.style.display = "flex"
+    targetElement2.style.padding = "0px 5px 0px";
+    targetElement2.style.width = "40%";
     targetElement4.style.padding = "100px 0px 0px";
   }
 }
+
+window.addEventListener('resize', windowSize);
