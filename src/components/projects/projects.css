@@ -1,0 +1,39 @@
+.projcontainer-heading {
+  padding-top: 15px;
+  text-align: center;
+  font-size: 190%;
+  font-family: Crimson Pro, serif;
+}
+
+.projcontainer-main {
+  padding: 40px 0px;
+}
+
+.project {
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-family: Crimson Pro, serif;
+  font-size: 130%;
+  color: black;
+}
+
+.project-heading {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: black;
+}
+
+.gitlogo {
+  display: inline;
+  margin-top: 2px;
+}
+
+.gitlogo {
+  transition: filter 0.3s ease;
+}
+
+.gitlogo:hover {
+  filter: invert(50%) sepia(100%) saturate(1000%) hue-rotate(300deg); /* Adjust the filter as needed */
+}

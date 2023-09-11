@@ -1,0 +1,33 @@
+.contact-heading {
+  padding-top: 15px;
+  text-align: center;
+  font-size: 190%;
+  font-family: Crimson Pro, serif;
+}
+
+.contact-description {
+  font-family: Crimson Pro, serif;
+  font-size: 150%;
+  padding: 2% 0% 0% 0%;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  color: #a52514;
+}
+
+.contact-links {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-images {
+  margin: 0px 15px;
+  padding: 5px 5px;
+}
+
+.contact-images:hover {
+  background-color: rgb(23, 179, 93);
+  border-radius: 10px;
+}
