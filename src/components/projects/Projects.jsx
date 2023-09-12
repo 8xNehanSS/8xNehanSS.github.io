@@ -25,10 +25,14 @@ const Projects = () => {
     <img src="/assets/images/gitlogosvg.svg" width="25" className="gitlogo" />
   );
   const mappedData = projects.toReversed().map((item) => {
+    console.log(item);
     return (
       <div className="project" key={item._id}>
         <h2 className="project-heading">
-          <a href={item.link}>{git_image}</a>&nbsp;&nbsp;{item.title}
+          <a href={item.repolink} target="_blank">
+            {git_image}
+          </a>
+          &nbsp;&nbsp;{item.title}
         </h2>
         <p className="project-summary">{item.summary}</p>
         <p className="project-description">{item.description}</p>

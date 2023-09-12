@@ -20,6 +20,11 @@
 }
 
 .splash h1 {
-  font-size: 24px;
   margin-top: 20px;
+}
+
+.name {
+  font-family: "Handjet";
+  font-weight: 600;
+  font-size: 30px;
 }
