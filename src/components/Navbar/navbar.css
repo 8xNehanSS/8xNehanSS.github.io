@@ -2,7 +2,7 @@ nav {
   background-color: rgb(23, 179, 93);
   display: flex;
   width: 100%;
-  padding-top: 20px;
+  padding-top: 15px;
   padding-bottom: 20px;
   position: fixed;
   justify-content: space-between;
@@ -12,6 +12,23 @@ nav {
 }
 
 nav > h1 {
+  padding-top: 5px;
+  font-size: 30px;
+  font-family: Crimson Pro, serif;
+  color: #000000;
+}
+
+.nav-heading {
+  padding-top: 5px;
+  display: flex;
+}
+
+.nav-title {
+  padding-top: 5px;
+  padding-left: 20px;
+}
+
+.nav-heading {
   padding-left: 5%;
   font-size: 30px;
   font-family: Crimson Pro, serif;
@@ -36,4 +53,9 @@ a:visited {
 .nav-connect a:hover,
 a:active {
   color: yellow;
+}
+
+.nav-img {
+  border: 3px solid black;
+  border-radius: 50%;
 }

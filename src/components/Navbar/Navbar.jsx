@@ -8,7 +8,14 @@ const Navbar = (props) => {
   }
   return (
     <nav>
-      <h1 className="nav-heading">{name}</h1>
+      <div className="nav-heading">
+        <img
+          src="/assets/images/icon_green.png"
+          width="40"
+          className="nav-img"
+        />
+        <h1 className="nav-title">{name}</h1>
+      </div>
       <h1 className="nav-connect">
         <a href="#credits">Lets Connect!</a>
       </h1>

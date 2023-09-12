@@ -11,6 +11,8 @@
 .credits p {
   padding-top: 20px;
   padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-left: 5%;
   margin-right: 5%;
 }
