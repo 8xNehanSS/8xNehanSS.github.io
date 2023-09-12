@@ -6,18 +6,21 @@
 }
 
 .container {
+  padding-top: 20px;
+  padding-bottom: 5px;
   width: 100%;
   overflow: hidden;
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
-  height: 30vh; /* Adjust this to the desired height */
+  height: auto; /* Adjust this to the desired height */
 }
 
-.tech-arrow {
+.tech-arrows {
   display: flex;
+  justify-content: center;
   align-items: center;
-  margin: 0px 40px;
+  gap: 70px;
 }
 
 .tech--arrow {

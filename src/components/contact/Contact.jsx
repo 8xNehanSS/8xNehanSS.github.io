@@ -29,8 +29,9 @@ const Contact = () => {
         intentions of sending spam. For any work-related inquiries, direct them
         to below Email.<br></br>
         <br></br>
-        Email:<br></br>nehan.sudasinghe@gmail.com
+        Email:
       </p>
+      <p className="contact-email">nehan.sudasinghe@gmail.com</p>
     </>
   );
 };

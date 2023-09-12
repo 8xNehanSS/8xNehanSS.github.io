@@ -31,3 +31,10 @@
   background-color: rgb(23, 179, 93);
   border-radius: 10px;
 }
+
+.contact-email {
+  text-align: center;
+  font-family: Crimson Pro, serif;
+  font-size: 150%;
+  color: #a52514;
+}

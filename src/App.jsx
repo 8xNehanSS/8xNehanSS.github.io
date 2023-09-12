@@ -42,7 +42,7 @@ function App() {
           <Navbar window={windowWidth} />
           <HeroSection window={windowWidth} />
           <hr></hr>
-          <Technologies />
+          <Technologies window={windowWidth} />
           <hr></hr>
           <Projects />
           <hr></hr>

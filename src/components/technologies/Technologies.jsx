@@ -3,7 +3,7 @@ import "./technologies.css";
 import Loader from "../loader/Loader";
 import { sleep } from "../../helpers/utils";
 
-const Technologies = () => {
+const Technologies = (props) => {
   const [tech, setTech] = useState([]);
   const [loading, setLoading] = useState(false);
   const containerRef = useRef(null);
@@ -42,10 +42,17 @@ const Technologies = () => {
     }
   };
 
+  let style1;
+  let style2;
+  if (props.window < 650) {
+    style1 = { minWidth: "100px", height: "100px" };
+    style2 = { width: "50px" };
+  }
+
   const mappedData = tech.map((item) => {
     return (
-      <div className="box" key={item._id}>
-        <img src={item.image} alt={item._id} width="50px" />
+      <div className="box" key={item._id} style={style1}>
+        <img src={item.image} alt={item._id} width="50px" style={style2} />
       </div>
     );
   });
@@ -53,7 +60,12 @@ const Technologies = () => {
   return (
     <div className="tech">
       <h2 className="tech-heading">TECHNOLOGIES</h2>
-      <div className="tech-arrow">
+      <div className="container">
+        <div className="box-container" ref={containerRef}>
+          {!loading ? mappedData : <Loader />}
+        </div>
+      </div>
+      <div className="tech-arrows">
         <img
           src="/assets/images/arrowL.png"
           width="50"
@@ -61,11 +73,6 @@ const Technologies = () => {
           className="tech--arrow"
           onClick={scrollLeft} // Scroll left when the left arrow is clicked
         />
-        <div className="container">
-          <div className="box-container" ref={containerRef}>
-            {!loading ? mappedData : <Loader />}
-          </div>
-        </div>
         <img
           src="/assets/images/arrowR.png"
           width="50"
